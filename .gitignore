@@ -1,0 +1,71 @@
+# FNAF Wiki Repository - Strict .gitignore
+# Only markdown files from FNAF directory are tracked
+
+# Block everything by default
+*
+
+# Re-allow only markdown files
+!*.md
+
+# Re-allow the .gitignore itself
+!.gitignore
+
+# ============================================
+# AI/Agent Tooling Exclusions
+# ============================================
+
+# Claude
+.claude/
+.claude*
+.clauderc
+.claude.json
+.claude/settings.json
+
+# Claude Code
+.claude-code/
+.claude-code*
+claude-code.json
+~/.claude/
+
+# Common AI/agent config files
+ai/
+agent/
+agents/
+.skills/
+skills/
+tooling/
+configs/
+memory/
+
+# Configuration files
+config.json
+config.yaml
+config.yml
+settings.json
+settings.yaml
+settings.yml
+
+# Environment and secrets
+.env
+.env.local
+.env.*
+*.pem
+*.key
+*.crt
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.code-workspace
+
+# Backup and temp files
+*.bak
+*.tmp
+*.temp
+*_backup.*
+*_old.*
